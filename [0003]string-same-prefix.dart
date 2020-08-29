@@ -11,6 +11,8 @@ void main() {
       if (str.indexOf(ret) != 0) {
         ret = ret.substring(0, ret.length - 1);
         print('tmp:$ret');
+      } else {
+        break;
       }
     }
     if (ret.length == 0) {
