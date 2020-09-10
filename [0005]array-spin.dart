@@ -6,9 +6,9 @@ void main() {
 }
 
 List rotate(List arr, int k) {
-  var tmp = arr.reversed.toList();
+  var tmp = arr.reversed;
   var ret = [];
-  ret.addAll(tmp.take(k % arr.length).toList().reversed.toList());
-  ret.addAll(tmp.skip(k % arr.length).toList().reversed.toList());
+  ret.addAll(tmp.take(k % arr.length).toList().reversed);
+  ret.addAll(tmp.skip(k % arr.length).toList().reversed);
   return ret;
 }
