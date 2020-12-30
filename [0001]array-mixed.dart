@@ -1,4 +1,6 @@
 /// 
+/// 两个数组的交集
+/// 
 /// 给定两个数组，编写一个函数来计算它们的交集。
 /// 
 /// 示例 1:
@@ -19,8 +21,9 @@
 void main() {
   var a = [4, 9, 5];
   var b = [9, 4, 9, 8, 4];
+  print('input :a=$a b=$b');
   var ret = mix(a, b);
-  print('ret:$ret');
+  print('result:$ret');
 }
 
 List mix(List a, List b) {
